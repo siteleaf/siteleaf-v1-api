@@ -38,12 +38,12 @@ Returns the current user.
 #### Response
 ```json
 {
-  "id": "51afb470ef75acdd94000001",
+  "id": "51afb897ef75acda9c000001",
   "email": "barry@whitehouse.gov",
   "firstname": "Barack",
   "lastname": "Obama",
-  "created_at": "2013-06-05T17:58:08-04:00",
-  "updated_at": "2013-06-05T17:58:08-04:00"
+  "created_at": "2013-06-05T18:15:51-04:00",
+  "updated_at": "2013-06-05T18:15:51-04:00"
 }
 ```
 
@@ -56,12 +56,12 @@ Returns array of users associated with your sites and the sites you belong to.
 ```json
 [
  {
-   "id": "51afb470ef75acdd94000002",
+   "id": "51afb897ef75acda9c000002",
    "email": "barry@whitehouse.gov",
    "firstname": "Barack",
    "lastname": "Obama",
-   "created_at": "2013-06-05T17:58:08-04:00",
-   "updated_at": "2013-06-05T17:58:08-04:00"
+   "created_at": "2013-06-05T18:15:51-04:00",
+   "updated_at": "2013-06-05T18:15:51-04:00"
  }
 ]
 ```
@@ -80,13 +80,13 @@ Returns an array of sites that the authenticated user belongs to.
 ```json
 [
  {
-   "id": "51afb470ef75acdd94000004",
+   "id": "51afb897ef75acda9c000004",
    "title": "My Site",
    "domain": "mysite.com",
    "cname": "abcdefghijklmnopqrst-abcdefghijklmnopqrstuvwxyz123456.a1.abc.rackcdn.com",
    "timezone": "Eastern Time (US & Canada)",
-   "created_at": "2013-06-05T17:58:08-04:00",
-   "updated_at": "2013-06-05T17:58:08-04:00",
+   "created_at": "2013-06-05T18:15:51-04:00",
+   "updated_at": "2013-06-05T18:15:51-04:00",
    "user_id": "51af47a8ef75ac5e8c000001"
  }
 ]
@@ -106,13 +106,13 @@ Creates a site belonging to the authenticated user.
 #### Response
 ```json
 {
-  "id": "51afb470ef75acdd94000003",
+  "id": "51afb897ef75acda9c000003",
   "title": "My Site",
   "domain": "mysite.com",
   "cname": "abcdefghijklmnopqrst-abcdefghijklmnopqrstuvwxyz123456.a1.abc.rackcdn.com",
   "timezone": "Eastern Time (US & Canada)",
-  "created_at": "2013-06-05T17:58:08-04:00",
-  "updated_at": "2013-06-05T17:58:08-04:00",
+  "created_at": "2013-06-05T18:15:51-04:00",
+  "updated_at": "2013-06-05T18:15:51-04:00",
   "user_id": "51af47a8ef75ac5e8c000001"
 }
 ```
@@ -129,13 +129,13 @@ Returns the given site.
 #### Response
 ```json
 {
-  "id": "51afb470ef75acdd94000003",
+  "id": "51afb897ef75acda9c000003",
   "title": "My Site",
   "domain": "mysite.com",
   "cname": "abcdefghijklmnopqrst-abcdefghijklmnopqrstuvwxyz123456.a1.abc.rackcdn.com",
   "timezone": "Eastern Time (US & Canada)",
-  "created_at": "2013-06-05T17:58:08-04:00",
-  "updated_at": "2013-06-05T17:58:08-04:00",
+  "created_at": "2013-06-05T18:15:51-04:00",
+  "updated_at": "2013-06-05T18:15:51-04:00",
   "user_id": "51af47a8ef75ac5e8c000001"
 }
 ```
@@ -158,13 +158,13 @@ Updates the given site.
 #### Response
 ```json
 {
-  "id": "51afb470ef75acdd94000003",
+  "id": "51afb897ef75acda9c000003",
   "title": "My Site",
   "domain": "mysite.com",
   "cname": "abcdefghijklmnopqrst-abcdefghijklmnopqrstuvwxyz123456.a1.abc.rackcdn.com",
   "timezone": "Eastern Time (US & Canada)",
-  "created_at": "2013-06-05T17:58:08-04:00",
-  "updated_at": "2013-06-05T17:58:08-04:00",
+  "created_at": "2013-06-05T18:15:51-04:00",
+  "updated_at": "2013-06-05T18:15:51-04:00",
   "user_id": "51af47a8ef75ac5e8c000001"
 }
 ```
@@ -177,13 +177,13 @@ Deletes the given site.
 #### Response
 ```json
 {
-  "id": "51afb470ef75acdd94000003",
+  "id": "51afb897ef75acda9c000003",
   "title": "My Site",
   "domain": "mysite.com",
   "cname": "abcdefghijklmnopqrst-abcdefghijklmnopqrstuvwxyz123456.a1.abc.rackcdn.com",
   "timezone": "Eastern Time (US & Canada)",
-  "created_at": "2013-06-05T17:58:08-04:00",
-  "updated_at": "2013-06-05T17:58:08-04:00",
+  "created_at": "2013-06-05T18:15:51-04:00",
+  "updated_at": "2013-06-05T18:15:51-04:00",
   "user_id": "51af47a8ef75ac5e8c000001"
 }
 ```
@@ -200,13 +200,13 @@ Returns an array of all pages for the given site.
 #### Response
 ```json
 {
-  "id": "51afb470ef75acdd94000003",
+  "id": "51afb897ef75acda9c000003",
   "title": "My Site",
   "domain": "mysite.com",
   "cname": "abcdefghijklmnopqrst-abcdefghijklmnopqrstuvwxyz123456.a1.abc.rackcdn.com",
   "timezone": "Eastern Time (US & Canada)",
-  "created_at": "2013-06-05T17:58:08-04:00",
-  "updated_at": "2013-06-05T17:58:08-04:00",
+  "created_at": "2013-06-05T18:15:51-04:00",
+  "updated_at": "2013-06-05T18:15:51-04:00",
   "user_id": "51af47a8ef75ac5e8c000001"
 }
 ```
@@ -230,13 +230,13 @@ Creates a page on the given site.
 #### Response
 ```json
 {
-  "id": "51afb470ef75acdd94000003",
+  "id": "51afb897ef75acda9c000003",
   "title": "My Site",
   "domain": "mysite.com",
   "cname": "abcdefghijklmnopqrst-abcdefghijklmnopqrstuvwxyz123456.a1.abc.rackcdn.com",
   "timezone": "Eastern Time (US & Canada)",
-  "created_at": "2013-06-05T17:58:08-04:00",
-  "updated_at": "2013-06-05T17:58:08-04:00",
+  "created_at": "2013-06-05T18:15:51-04:00",
+  "updated_at": "2013-06-05T18:15:51-04:00",
   "user_id": "51af47a8ef75ac5e8c000001"
 }
 ```
@@ -263,15 +263,15 @@ curl -u API_KEY:API_SECRET \
 ```json
 [
  {
-   "id": "51afb470ef75acdd94000006",
+   "id": "51afb897ef75acda9c000006",
    "title": "My Content",
    "slug": "my-content",
    "url": "/pages/my-content",
    "body": "This is *my* content",
    "visibility": "draft",
-   "created_at": "2013-06-05T17:58:08-04:00",
-   "updated_at": "2013-06-05T17:58:08-04:00",
-   "published_at": "2013-06-05T21:58:08Z",
+   "created_at": "2013-06-05T18:15:51-04:00",
+   "updated_at": "2013-06-05T18:15:51-04:00",
+   "published_at": "2013-06-05T18:15:51-04:00",
    "user_id": "51af47a8ef75ac5e8c000001",
    "site_id": "51af47c1ef75acd940000002",
    "parent_id": "51a39a57ef75ac7634000005"
@@ -292,15 +292,15 @@ Returns an array of all posts for the given site.
 ```json
 [
  {
-   "id": "51afb470ef75acdd94000008",
+   "id": "51afb897ef75acda9c000008",
    "title": "My Content",
    "slug": "my-content",
    "url": "/pages/my-content",
    "body": "This is *my* content",
    "visibility": "draft",
-   "created_at": "2013-06-05T17:58:08-04:00",
-   "updated_at": "2013-06-05T17:58:08-04:00",
-   "published_at": "2013-06-05T21:58:08Z",
+   "created_at": "2013-06-05T18:15:51-04:00",
+   "updated_at": "2013-06-05T18:15:51-04:00",
+   "published_at": "2013-06-05T18:15:51-04:00",
    "user_id": "51af47a8ef75ac5e8c000001",
    "site_id": "51af47c1ef75acd940000002",
    "parent_id": "51a39a57ef75ac7634000005"
@@ -317,15 +317,17 @@ Returns an array of all assets for the given site.
 ```json
 [
  {
-   "id": "51afb470ef75acdd9400000a",
+   "id": "51afb897ef75acda9c00000a",
    "filename": "my-file.gif",
-   "url": "/my-page/my-file.gif",
-   "file": "51a39a57ef75ac7634000010.gif",
+   "url": "/assets/my-file.gif",
+   "file": {
+     "url": null
+   },
    "content_type": "image/gif",
    "filesize": 23856,
    "checksum": "9187a6775bdce8f1f2143accea89ba6c",
-   "created_at": "2013-06-05T17:58:08-04:00",
-   "updated_at": "2013-06-05T17:58:08-04:00"
+   "created_at": "2013-06-05T18:15:51-04:00",
+   "updated_at": "2013-06-05T18:15:51-04:00"
  }
 ]
 ```
@@ -342,15 +344,17 @@ Creates an asset on the given site.
 #### Response
 ```json
 {
-  "id": "51afb470ef75acdd94000009",
+  "id": "51afb897ef75acda9c000009",
   "filename": "my-file.gif",
-  "url": "/my-page/my-file.gif",
-  "file": "51a39a57ef75ac7634000010.gif",
+  "url": "/assets/my-file.gif",
+  "file": {
+    "url": null
+  },
   "content_type": "image/gif",
   "filesize": 23856,
   "checksum": "9187a6775bdce8f1f2143accea89ba6c",
-  "created_at": "2013-06-05T17:58:08-04:00",
-  "updated_at": "2013-06-05T17:58:08-04:00"
+  "created_at": "2013-06-05T18:15:51-04:00",
+  "updated_at": "2013-06-05T18:15:51-04:00"
 }
 ```
 
@@ -363,12 +367,12 @@ Returns an array of users for the given site.
 ```json
 [
  {
-   "id": "51afb470ef75acdd94000002",
+   "id": "51afb897ef75acda9c000002",
    "email": "barry@whitehouse.gov",
    "firstname": "Barack",
    "lastname": "Obama",
-   "created_at": "2013-06-05T17:58:08-04:00",
-   "updated_at": "2013-06-05T17:58:08-04:00"
+   "created_at": "2013-06-05T18:15:51-04:00",
+   "updated_at": "2013-06-05T18:15:51-04:00"
  }
 ]
 ```
@@ -386,15 +390,15 @@ Returns an array of Pages created by the authenticated user.
 ```json
 [
  {
-   "id": "51afb470ef75acdd94000006",
+   "id": "51afb897ef75acda9c000006",
    "title": "My Content",
    "slug": "my-content",
    "url": "/pages/my-content",
    "body": "This is *my* content",
    "visibility": "draft",
-   "created_at": "2013-06-05T17:58:08-04:00",
-   "updated_at": "2013-06-05T17:58:08-04:00",
-   "published_at": "2013-06-05T21:58:08Z",
+   "created_at": "2013-06-05T18:15:51-04:00",
+   "updated_at": "2013-06-05T18:15:51-04:00",
+   "published_at": "2013-06-05T18:15:51-04:00",
    "user_id": "51af47a8ef75ac5e8c000001",
    "site_id": "51af47c1ef75acd940000002",
    "parent_id": "51a39a57ef75ac7634000005"
@@ -414,15 +418,15 @@ Returns the given page.
 #### Response
 ```json
 {
-  "id": "51afb470ef75acdd94000005",
+  "id": "51afb897ef75acda9c000005",
   "title": "My Content",
   "slug": "my-content",
   "url": "/pages/my-content",
   "body": "This is *my* content",
   "visibility": "draft",
-  "created_at": "2013-06-05T17:58:08-04:00",
-  "updated_at": "2013-06-05T17:58:08-04:00",
-  "published_at": "2013-06-05T21:58:08Z",
+  "created_at": "2013-06-05T18:15:51-04:00",
+  "updated_at": "2013-06-05T18:15:51-04:00",
+  "published_at": "2013-06-05T18:15:51-04:00",
   "user_id": "51af47a8ef75ac5e8c000001",
   "site_id": "51af47c1ef75acd940000002",
   "parent_id": "51a39a57ef75ac7634000005"
@@ -447,15 +451,15 @@ Updates the given page.
 #### Response
 ```json
 {
-  "id": "51afb470ef75acdd94000005",
+  "id": "51afb897ef75acda9c000005",
   "title": "My Content",
   "slug": "my-content",
   "url": "/pages/my-content",
   "body": "This is *my* content",
   "visibility": "draft",
-  "created_at": "2013-06-05T17:58:08-04:00",
-  "updated_at": "2013-06-05T17:58:08-04:00",
-  "published_at": "2013-06-05T21:58:08Z",
+  "created_at": "2013-06-05T18:15:51-04:00",
+  "updated_at": "2013-06-05T18:15:51-04:00",
+  "published_at": "2013-06-05T18:15:51-04:00",
   "user_id": "51af47a8ef75ac5e8c000001",
   "site_id": "51af47c1ef75acd940000002",
   "parent_id": "51a39a57ef75ac7634000005"
@@ -473,15 +477,15 @@ Deletes the given page.
 #### Response
 ```json
 {
-  "id": "51afb470ef75acdd94000005",
+  "id": "51afb897ef75acda9c000005",
   "title": "My Content",
   "slug": "my-content",
   "url": "/pages/my-content",
   "body": "This is *my* content",
   "visibility": "draft",
-  "created_at": "2013-06-05T17:58:08-04:00",
-  "updated_at": "2013-06-05T17:58:08-04:00",
-  "published_at": "2013-06-05T21:58:08Z",
+  "created_at": "2013-06-05T18:15:51-04:00",
+  "updated_at": "2013-06-05T18:15:51-04:00",
+  "published_at": "2013-06-05T18:15:51-04:00",
   "user_id": "51af47a8ef75ac5e8c000001",
   "site_id": "51af47c1ef75acd940000002",
   "parent_id": "51a39a57ef75ac7634000005"
@@ -501,15 +505,15 @@ Returns an array of posts on the given page.
 ```json
 [
  {
-   "id": "51afb470ef75acdd94000008",
+   "id": "51afb897ef75acda9c000008",
    "title": "My Content",
    "slug": "my-content",
    "url": "/pages/my-content",
    "body": "This is *my* content",
    "visibility": "draft",
-   "created_at": "2013-06-05T17:58:08-04:00",
-   "updated_at": "2013-06-05T17:58:08-04:00",
-   "published_at": "2013-06-05T21:58:08Z",
+   "created_at": "2013-06-05T18:15:51-04:00",
+   "updated_at": "2013-06-05T18:15:51-04:00",
+   "published_at": "2013-06-05T18:15:51-04:00",
    "user_id": "51af47a8ef75ac5e8c000001",
    "site_id": "51af47c1ef75acd940000002",
    "parent_id": "51a39a57ef75ac7634000005"
@@ -536,15 +540,15 @@ Creates a post on the given page.
 #### Response
 ```json
 {
-  "id": "51afb470ef75acdd94000007",
+  "id": "51afb897ef75acda9c000007",
   "title": "My Content",
   "slug": "my-content",
   "url": "/pages/my-content",
   "body": "This is *my* content",
   "visibility": "draft",
-  "created_at": "2013-06-05T17:58:08-04:00",
-  "updated_at": "2013-06-05T17:58:08-04:00",
-  "published_at": "2013-06-05T21:58:08Z",
+  "created_at": "2013-06-05T18:15:51-04:00",
+  "updated_at": "2013-06-05T18:15:51-04:00",
+  "published_at": "2013-06-05T18:15:51-04:00",
   "user_id": "51af47a8ef75ac5e8c000001",
   "site_id": "51af47c1ef75acd940000002",
   "parent_id": "51a39a57ef75ac7634000005"
@@ -560,15 +564,17 @@ Returns an array of assets on the given page.
 ```json
 [
  {
-   "id": "51afb470ef75acdd9400000a",
+   "id": "51afb897ef75acda9c00000a",
    "filename": "my-file.gif",
-   "url": "/my-page/my-file.gif",
-   "file": "51a39a57ef75ac7634000010.gif",
+   "url": "/assets/my-file.gif",
+   "file": {
+     "url": null
+   },
    "content_type": "image/gif",
    "filesize": 23856,
    "checksum": "9187a6775bdce8f1f2143accea89ba6c",
-   "created_at": "2013-06-05T17:58:08-04:00",
-   "updated_at": "2013-06-05T17:58:08-04:00"
+   "created_at": "2013-06-05T18:15:51-04:00",
+   "updated_at": "2013-06-05T18:15:51-04:00"
  }
 ]
 ```
@@ -585,15 +591,17 @@ Creates an asset on the given page.
 #### Response
 ```json
 {
-  "id": "51afb470ef75acdd94000009",
+  "id": "51afb897ef75acda9c000009",
   "filename": "my-file.gif",
-  "url": "/my-page/my-file.gif",
-  "file": "51a39a57ef75ac7634000010.gif",
+  "url": "/assets/my-file.gif",
+  "file": {
+    "url": null
+  },
   "content_type": "image/gif",
   "filesize": 23856,
   "checksum": "9187a6775bdce8f1f2143accea89ba6c",
-  "created_at": "2013-06-05T17:58:08-04:00",
-  "updated_at": "2013-06-05T17:58:08-04:00"
+  "created_at": "2013-06-05T18:15:51-04:00",
+  "updated_at": "2013-06-05T18:15:51-04:00"
 }
 ```
 
@@ -610,9 +618,143 @@ Creates metadata on the given page.
 #### Response
 ```json
 {
-  "id": "51afb470ef75acdd9400000b",
+  "id": "51afb897ef75acda9c00000b",
   "key": "color",
   "value": "blue"
+}
+```
+
+-
+### GET /v1/posts.json
+
+Returns an array of posts created by the authenticated user.
+
+#### Params
+* **include** *(optional)* — Array of entities to include (`user`, `site`, `parent`, `assets`, `meta`, `taxonomy`)
+
+
+#### Response
+```json
+[
+ {
+   "id": "51afb897ef75acda9c000008",
+   "title": "My Content",
+   "slug": "my-content",
+   "url": "/pages/my-content",
+   "body": "This is *my* content",
+   "visibility": "draft",
+   "created_at": "2013-06-05T18:15:51-04:00",
+   "updated_at": "2013-06-05T18:15:51-04:00",
+   "published_at": "2013-06-05T18:15:51-04:00",
+   "user_id": "51af47a8ef75ac5e8c000001",
+   "site_id": "51af47c1ef75acd940000002",
+   "parent_id": "51a39a57ef75ac7634000005"
+ }
+]
+```
+
+-
+### GET /v1/posts/:id.json
+
+Returns the given post.
+
+#### Params
+* **include** *(optional)* — Array of entities to include (`user`, `site`, `parent`, `assets`, `meta`, `taxonomy`)
+
+
+#### Response
+```json
+{
+  "id": "51afb897ef75acda9c000007",
+  "title": "My Content",
+  "slug": "my-content",
+  "url": "/pages/my-content",
+  "body": "This is *my* content",
+  "visibility": "draft",
+  "created_at": "2013-06-05T18:15:51-04:00",
+  "updated_at": "2013-06-05T18:15:51-04:00",
+  "published_at": "2013-06-05T18:15:51-04:00",
+  "user_id": "51af47a8ef75ac5e8c000001",
+  "site_id": "51af47c1ef75acd940000002",
+  "parent_id": "51a39a57ef75ac7634000005"
+}
+```
+
+-
+### PUT /v1/posts/:id.json
+
+Updates the given post.
+
+#### Params
+* **title** *(optional)* — Post title
+* **body** *(optional)* — Post body
+* **custom_slug** *(optional)* — Post custom slug
+* **published_at** *(optional)* — Post published date
+* **visibility** *(optional)* — Post visibility (`draft`, `hidden`, `visible`)
+* **parent_id** *(optional)* — Post parent ID
+* **meta** *(optional)* — Array of Metadata
+* **taxonomy** *(optional)* — Array of Taxonomy
+
+
+#### Response
+```json
+{
+  "id": "51afb897ef75acda9c000007",
+  "title": "My Content",
+  "slug": "my-content",
+  "url": "/pages/my-content",
+  "body": "This is *my* content",
+  "visibility": "draft",
+  "created_at": "2013-06-05T18:15:51-04:00",
+  "updated_at": "2013-06-05T18:15:51-04:00",
+  "published_at": "2013-06-05T18:15:51-04:00",
+  "user_id": "51af47a8ef75ac5e8c000001",
+  "site_id": "51af47c1ef75acd940000002",
+  "parent_id": "51a39a57ef75ac7634000005"
+}
+```
+
+-
+### DELETE /v1/posts/:id.json
+
+Deletes the given post.
+
+#### Response
+```json
+{
+  "id": "51afb897ef75acda9c000007",
+  "title": "My Content",
+  "slug": "my-content",
+  "url": "/pages/my-content",
+  "body": "This is *my* content",
+  "visibility": "draft",
+  "created_at": "2013-06-05T18:15:51-04:00",
+  "updated_at": "2013-06-05T18:15:51-04:00",
+  "published_at": "2013-06-05T18:15:51-04:00",
+  "user_id": "51af47a8ef75ac5e8c000001",
+  "site_id": "51af47c1ef75acd940000002",
+  "parent_id": "51a39a57ef75ac7634000005"
+}
+```
+
+-
+### POST /v1/posts/:id/taxonomy.json
+
+Creates taxonomy on the given post.
+
+#### Response
+```json
+{
+  "id": "51afb897ef75acda9c00000d",
+  "key": "Tags",
+  "slug": "tags",
+  "values": [
+    {
+      "value": "Announcement",
+      "slug": "announcement",
+      "url": "/blog/tags/announcement"
+    }
+  ]
 }
 ```
 
