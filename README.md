@@ -1,4 +1,3 @@
-
 # Siteleaf - API Documentation
 ## API Authentication
 ## API Endpoints
@@ -8,7 +7,7 @@ Authenticates user and returns user API keys
 ##### Request
 ```shell
 curl -X POST \
-  -u username:password \
+  -u email:password \
   https://api.siteleaf.com/v1/auth.json
 ```
 
