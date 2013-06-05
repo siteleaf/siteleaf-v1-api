@@ -1,5 +1,6 @@
 
-# API Authentication
+# Siteleaf - API Documentation
+## API Authentication
 ## API Endpoints
 ### POST /api/v1/auth.json
 Authenticates user and returns user API keys
