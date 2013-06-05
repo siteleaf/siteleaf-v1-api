@@ -1,6 +1,7 @@
 
 # Siteleaf - API Documentation
 ## API Authentication
+Siteleaf uses Basic Auth of the user's API key and secret to authenticate each request. To retrieve a user's API key and secret, use the `POST /v1/auth` endpoint, passing the user's email and password authenticated with Basic Auth.
 ## API Endpoints
 ### POST /v1/auth.json
 Authenticates user and returns user API keys
@@ -37,12 +38,12 @@ Returns the current user.
 ##### Response
 ```json
 {
-  "id": "51af5984ef75ace195000001",
+  "id": "51af5e48ef75acc010000001",
   "email": "barry@whitehouse.gov",
   "firstname": "Barack",
   "lastname": "Obama",
-  "created_at": "2013-06-05T11:30:12-04:00",
-  "updated_at": "2013-06-05T11:30:12-04:00"
+  "created_at": "2013-06-05T11:50:32-04:00",
+  "updated_at": "2013-06-05T11:50:32-04:00"
 }
 ```
 
@@ -55,12 +56,12 @@ Returns array of users associated with your sites and the sites you belong to.
 ```json
 [
  {
-   "id": "51af5984ef75ace195000002",
+   "id": "51af5e48ef75acc010000002",
    "email": "barry@whitehouse.gov",
    "firstname": "Barack",
    "lastname": "Obama",
-   "created_at": "2013-06-05T11:30:12-04:00",
-   "updated_at": "2013-06-05T11:30:12-04:00"
+   "created_at": "2013-06-05T11:50:32-04:00",
+   "updated_at": "2013-06-05T11:50:32-04:00"
  }
 ]
 ```
