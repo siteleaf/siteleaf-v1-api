@@ -38,12 +38,12 @@ Returns the current user.
 #### Response
 ```json
 {
-  "id": "51af9548ef75acd56d000001",
+  "id": "51af9efdef75ac6359000001",
   "email": "barry@whitehouse.gov",
   "firstname": "Barack",
   "lastname": "Obama",
-  "created_at": "2013-06-05T15:45:12-04:00",
-  "updated_at": "2013-06-05T15:45:12-04:00"
+  "created_at": "2013-06-05T16:26:37-04:00",
+  "updated_at": "2013-06-05T16:26:37-04:00"
 }
 ```
 
@@ -56,12 +56,12 @@ Returns array of users associated with your sites and the sites you belong to.
 ```json
 [
  {
-   "id": "51af9548ef75acd56d000002",
+   "id": "51af9efdef75ac6359000002",
    "email": "barry@whitehouse.gov",
    "firstname": "Barack",
    "lastname": "Obama",
-   "created_at": "2013-06-05T15:45:12-04:00",
-   "updated_at": "2013-06-05T15:45:12-04:00"
+   "created_at": "2013-06-05T16:26:37-04:00",
+   "updated_at": "2013-06-05T16:26:37-04:00"
  }
 ]
 ```
@@ -80,13 +80,13 @@ Returns an array of sites that the authenticated user belongs to.
 ```json
 [
  {
-   "id": "51af9548ef75acd56d000004",
+   "id": "51af9efdef75ac6359000004",
    "title": "My Site",
    "domain": "mysite.com",
    "cname": "abcdefghijklmnopqrst-abcdefghijklmnopqrstuvwxyz123456.a1.abc.rackcdn.com",
    "timezone": "Eastern Time (US & Canada)",
-   "created_at": "2013-06-05T15:45:12-04:00",
-   "updated_at": "2013-06-05T15:45:12-04:00",
+   "created_at": "2013-06-05T16:26:37-04:00",
+   "updated_at": "2013-06-05T16:26:37-04:00",
    "user_id": "51af47a8ef75ac5e8c000001"
  }
 ]
@@ -106,13 +106,13 @@ Creates a site belonging to the authenticated user.
 #### Response
 ```json
 {
-  "id": "51af9548ef75acd56d000003",
+  "id": "51af9efdef75ac6359000003",
   "title": "My Site",
   "domain": "mysite.com",
   "cname": "abcdefghijklmnopqrst-abcdefghijklmnopqrstuvwxyz123456.a1.abc.rackcdn.com",
   "timezone": "Eastern Time (US & Canada)",
-  "created_at": "2013-06-05T15:45:12-04:00",
-  "updated_at": "2013-06-05T15:45:12-04:00",
+  "created_at": "2013-06-05T16:26:37-04:00",
+  "updated_at": "2013-06-05T16:26:37-04:00",
   "user_id": "51af47a8ef75ac5e8c000001"
 }
 ```
@@ -129,13 +129,13 @@ Returns the given site.
 #### Response
 ```json
 {
-  "id": "51af9548ef75acd56d000003",
+  "id": "51af9efdef75ac6359000003",
   "title": "My Site",
   "domain": "mysite.com",
   "cname": "abcdefghijklmnopqrst-abcdefghijklmnopqrstuvwxyz123456.a1.abc.rackcdn.com",
   "timezone": "Eastern Time (US & Canada)",
-  "created_at": "2013-06-05T15:45:12-04:00",
-  "updated_at": "2013-06-05T15:45:12-04:00",
+  "created_at": "2013-06-05T16:26:37-04:00",
+  "updated_at": "2013-06-05T16:26:37-04:00",
   "user_id": "51af47a8ef75ac5e8c000001"
 }
 ```
@@ -158,13 +158,13 @@ Updates the given site.
 #### Response
 ```json
 {
-  "id": "51af9548ef75acd56d000003",
+  "id": "51af9efdef75ac6359000003",
   "title": "My Site",
   "domain": "mysite.com",
   "cname": "abcdefghijklmnopqrst-abcdefghijklmnopqrstuvwxyz123456.a1.abc.rackcdn.com",
   "timezone": "Eastern Time (US & Canada)",
-  "created_at": "2013-06-05T15:45:12-04:00",
-  "updated_at": "2013-06-05T15:45:12-04:00",
+  "created_at": "2013-06-05T16:26:37-04:00",
+  "updated_at": "2013-06-05T16:26:37-04:00",
   "user_id": "51af47a8ef75ac5e8c000001"
 }
 ```
@@ -177,13 +177,13 @@ Deletes the given site.
 #### Response
 ```json
 {
-  "id": "51af9548ef75acd56d000003",
+  "id": "51af9efdef75ac6359000003",
   "title": "My Site",
   "domain": "mysite.com",
   "cname": "abcdefghijklmnopqrst-abcdefghijklmnopqrstuvwxyz123456.a1.abc.rackcdn.com",
   "timezone": "Eastern Time (US & Canada)",
-  "created_at": "2013-06-05T15:45:12-04:00",
-  "updated_at": "2013-06-05T15:45:12-04:00",
+  "created_at": "2013-06-05T16:26:37-04:00",
+  "updated_at": "2013-06-05T16:26:37-04:00",
   "user_id": "51af47a8ef75ac5e8c000001"
 }
 ```
@@ -200,13 +200,13 @@ Returns an array of all pages for the given site.
 #### Response
 ```json
 {
-  "id": "51af9548ef75acd56d000003",
+  "id": "51af9efdef75ac6359000003",
   "title": "My Site",
   "domain": "mysite.com",
   "cname": "abcdefghijklmnopqrst-abcdefghijklmnopqrstuvwxyz123456.a1.abc.rackcdn.com",
   "timezone": "Eastern Time (US & Canada)",
-  "created_at": "2013-06-05T15:45:12-04:00",
-  "updated_at": "2013-06-05T15:45:12-04:00",
+  "created_at": "2013-06-05T16:26:37-04:00",
+  "updated_at": "2013-06-05T16:26:37-04:00",
   "user_id": "51af47a8ef75ac5e8c000001"
 }
 ```
@@ -230,13 +230,45 @@ Creates a page on the given site.
 #### Response
 ```json
 {
-  "id": "51af9548ef75acd56d000003",
+  "id": "51af9efdef75ac6359000003",
   "title": "My Site",
   "domain": "mysite.com",
   "cname": "abcdefghijklmnopqrst-abcdefghijklmnopqrstuvwxyz123456.a1.abc.rackcdn.com",
   "timezone": "Eastern Time (US & Canada)",
-  "created_at": "2013-06-05T15:45:12-04:00",
-  "updated_at": "2013-06-05T15:45:12-04:00",
+  "created_at": "2013-06-05T16:26:37-04:00",
+  "updated_at": "2013-06-05T16:26:37-04:00",
+  "user_id": "51af47a8ef75ac5e8c000001"
+}
+```
+
+-
+### PUT /v1/sites/:id/pages.json
+
+Repositions pages on the given site.
+
+#### Params
+* **ids**  — Nested JSON array of Page IDs and their children
+
+
+#### Request
+
+```shell
+curl -u API_KEY:API_SECRET \
+  -X PUT \
+  -d 'ids=[{"id":"51a38..."},{"id":"51a15...","children":[{"id":"51a39..."},{"id":"51a40..."}]}]' \
+  https://api.siteleaf.com/v1/sites/51a158a8ef75ac1ada000001/pages
+```
+
+#### Response
+```json
+{
+  "id": "51af9efdef75ac6359000003",
+  "title": "My Site",
+  "domain": "mysite.com",
+  "cname": "abcdefghijklmnopqrst-abcdefghijklmnopqrstuvwxyz123456.a1.abc.rackcdn.com",
+  "timezone": "Eastern Time (US & Canada)",
+  "created_at": "2013-06-05T16:26:37-04:00",
+  "updated_at": "2013-06-05T16:26:37-04:00",
   "user_id": "51af47a8ef75ac5e8c000001"
 }
 ```
