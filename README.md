@@ -2,7 +2,7 @@
 # Siteleaf - API Documentation
 ## API Authentication
 ## API Endpoints
-### POST /api/v1/auth.json
+### POST /v1/auth.json
 Authenticates user and returns user API keys
 
 ##### Request
@@ -19,7 +19,7 @@ curl -X POST -u email:password https://api.siteleaf.com/v1/auth.json
 ```
 
 -
-### GET /api/v1/ping.json
+### GET /v1/ping.json
 Pings the server.
 
 ##### Response
@@ -27,6 +27,42 @@ Pings the server.
 {
   "ping": "pong"
 }
+```
+
+-
+### GET /v1/users/me.json
+
+Returns the current user.
+
+##### Response
+```json
+{
+  "id": "51af5984ef75ace195000001",
+  "email": "barry@whitehouse.gov",
+  "firstname": "Barack",
+  "lastname": "Obama",
+  "created_at": "2013-06-05T11:30:12-04:00",
+  "updated_at": "2013-06-05T11:30:12-04:00"
+}
+```
+
+-
+### GET /v1/users.json
+
+Returns array of users associated with your sites and the sites you belong to.
+
+##### Response
+```json
+[
+ {
+   "id": "51af5984ef75ace195000002",
+   "email": "barry@whitehouse.gov",
+   "firstname": "Barack",
+   "lastname": "Obama",
+   "created_at": "2013-06-05T11:30:12-04:00",
+   "updated_at": "2013-06-05T11:30:12-04:00"
+ }
+]
 ```
 
 -
