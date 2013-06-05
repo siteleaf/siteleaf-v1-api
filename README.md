@@ -38,12 +38,12 @@ Returns the current user.
 #### Response
 ```json
 {
-  "id": "51af8e46ef75ac2392000001",
+  "id": "51af9548ef75acd56d000001",
   "email": "barry@whitehouse.gov",
   "firstname": "Barack",
   "lastname": "Obama",
-  "created_at": "2013-06-05T15:15:18-04:00",
-  "updated_at": "2013-06-05T15:15:18-04:00"
+  "created_at": "2013-06-05T15:45:12-04:00",
+  "updated_at": "2013-06-05T15:45:12-04:00"
 }
 ```
 
@@ -56,12 +56,12 @@ Returns array of users associated with your sites and the sites you belong to.
 ```json
 [
  {
-   "id": "51af8e46ef75ac2392000002",
+   "id": "51af9548ef75acd56d000002",
    "email": "barry@whitehouse.gov",
    "firstname": "Barack",
    "lastname": "Obama",
-   "created_at": "2013-06-05T15:15:18-04:00",
-   "updated_at": "2013-06-05T15:15:18-04:00"
+   "created_at": "2013-06-05T15:45:12-04:00",
+   "updated_at": "2013-06-05T15:45:12-04:00"
  }
 ]
 ```
@@ -73,20 +73,20 @@ Returns an array of sites that the authenticated user belongs to.
 
 #### Params
 * **domain** *(optional)* — Site domain
-* **include** *(optional)* — Array of entities to include
+* **include** *(optional)* — Array of entities to include (`user`, `pages`)
 
 
 #### Response
 ```json
 [
  {
-   "id": "51af8e46ef75ac2392000004",
+   "id": "51af9548ef75acd56d000004",
    "title": "My Site",
    "domain": "mysite.com",
    "cname": "abcdefghijklmnopqrst-abcdefghijklmnopqrstuvwxyz123456.a1.abc.rackcdn.com",
    "timezone": "Eastern Time (US & Canada)",
-   "created_at": "2013-06-05T15:15:18-04:00",
-   "updated_at": "2013-06-05T15:15:18-04:00",
+   "created_at": "2013-06-05T15:45:12-04:00",
+   "updated_at": "2013-06-05T15:45:12-04:00",
    "user_id": "51af47a8ef75ac5e8c000001"
  }
 ]
@@ -106,13 +106,137 @@ Creates a site belonging to the authenticated user.
 #### Response
 ```json
 {
-  "id": "51af8e46ef75ac2392000003",
+  "id": "51af9548ef75acd56d000003",
   "title": "My Site",
   "domain": "mysite.com",
   "cname": "abcdefghijklmnopqrst-abcdefghijklmnopqrstuvwxyz123456.a1.abc.rackcdn.com",
   "timezone": "Eastern Time (US & Canada)",
-  "created_at": "2013-06-05T15:15:18-04:00",
-  "updated_at": "2013-06-05T15:15:18-04:00",
+  "created_at": "2013-06-05T15:45:12-04:00",
+  "updated_at": "2013-06-05T15:45:12-04:00",
+  "user_id": "51af47a8ef75ac5e8c000001"
+}
+```
+
+-
+### GET /v1/sites/:id.json
+
+Returns the given site.
+
+#### Params
+* **include** *(optional)* — Array of entities to include (`user`, `pages`)
+
+
+#### Response
+```json
+{
+  "id": "51af9548ef75acd56d000003",
+  "title": "My Site",
+  "domain": "mysite.com",
+  "cname": "abcdefghijklmnopqrst-abcdefghijklmnopqrstuvwxyz123456.a1.abc.rackcdn.com",
+  "timezone": "Eastern Time (US & Canada)",
+  "created_at": "2013-06-05T15:45:12-04:00",
+  "updated_at": "2013-06-05T15:45:12-04:00",
+  "user_id": "51af47a8ef75ac5e8c000001"
+}
+```
+
+-
+### PUT /v1/sites/:id.json
+
+Updates the given site.
+
+#### Params
+* **title** *(optional)* — Site title
+* **domain** *(optional)* — Site domain
+* **timezone** *(optional)* — Site timezone
+* **hosting** *(optional)* — Site hosting (`siteleaf`, `ftp`, `s3`, `cloudfiles`)
+* **ftp_settings** *(optional)* — Site FTP settings (see hosting settings)
+* **s3_settings** *(optional)* — Site S3 settings (see hosting settings)
+* **cloudfiles_settings** *(optional)* — Site Cloudfiles settings (see hosting settings)
+
+
+#### Response
+```json
+{
+  "id": "51af9548ef75acd56d000003",
+  "title": "My Site",
+  "domain": "mysite.com",
+  "cname": "abcdefghijklmnopqrst-abcdefghijklmnopqrstuvwxyz123456.a1.abc.rackcdn.com",
+  "timezone": "Eastern Time (US & Canada)",
+  "created_at": "2013-06-05T15:45:12-04:00",
+  "updated_at": "2013-06-05T15:45:12-04:00",
+  "user_id": "51af47a8ef75ac5e8c000001"
+}
+```
+
+-
+### DELETE /v1/sites/:id.json
+
+Deletes the given site.
+
+#### Response
+```json
+{
+  "id": "51af9548ef75acd56d000003",
+  "title": "My Site",
+  "domain": "mysite.com",
+  "cname": "abcdefghijklmnopqrst-abcdefghijklmnopqrstuvwxyz123456.a1.abc.rackcdn.com",
+  "timezone": "Eastern Time (US & Canada)",
+  "created_at": "2013-06-05T15:45:12-04:00",
+  "updated_at": "2013-06-05T15:45:12-04:00",
+  "user_id": "51af47a8ef75ac5e8c000001"
+}
+```
+
+-
+### GET /v1/sites/:id/pages.json
+
+Returns an array of all pages for the given site.
+
+#### Params
+* **include** *(optional)* — Array of entities to include (`user`, `site`, `parent`, `pages`, `posts`, `assets`, `meta`)
+
+
+#### Response
+```json
+{
+  "id": "51af9548ef75acd56d000003",
+  "title": "My Site",
+  "domain": "mysite.com",
+  "cname": "abcdefghijklmnopqrst-abcdefghijklmnopqrstuvwxyz123456.a1.abc.rackcdn.com",
+  "timezone": "Eastern Time (US & Canada)",
+  "created_at": "2013-06-05T15:45:12-04:00",
+  "updated_at": "2013-06-05T15:45:12-04:00",
+  "user_id": "51af47a8ef75ac5e8c000001"
+}
+```
+
+-
+### POST /v1/sites/:id/pages.json
+
+Creates a page on the given site.
+
+#### Params
+* **title**  — Page title
+* **body** *(optional)* — Page body
+* **custom_slug** *(optional)* — Page custom slug
+* **published_at** *(optional)* — Page published date
+* **visibility** *(optional)* — Page visibility (`draft`, `hidden`, `visible`)
+* **parent_id** *(optional)* — Page parent ID
+* **meta** *(optional)* — Array of Page metadata
+* **asset_ids** *(optional)* — Array of existing Asset IDs
+
+
+#### Response
+```json
+{
+  "id": "51af9548ef75acd56d000003",
+  "title": "My Site",
+  "domain": "mysite.com",
+  "cname": "abcdefghijklmnopqrst-abcdefghijklmnopqrstuvwxyz123456.a1.abc.rackcdn.com",
+  "timezone": "Eastern Time (US & Canada)",
+  "created_at": "2013-06-05T15:45:12-04:00",
+  "updated_at": "2013-06-05T15:45:12-04:00",
   "user_id": "51af47a8ef75ac5e8c000001"
 }
 ```
