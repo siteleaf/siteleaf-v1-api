@@ -4,6 +4,13 @@
 ### POST /api/v1/auth.json
 Authenticates user and returns user API keys
 
+##### Request
+```shell
+curl -X POST \
+  -u username:password \
+  https://api.siteleaf.com/v1/auth.json
+```
+
 ##### Response
 ```json
 {
