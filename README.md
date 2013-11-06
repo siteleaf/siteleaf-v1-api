@@ -2,6 +2,12 @@
 # Siteleaf - API Documentation
 ## API Authentication
 Siteleaf uses Basic Auth of the user's API key and secret to authenticate each request. To retrieve a user's API key and secret, use the `POST /v1/auth` endpoint, passing the user's email and password authenticated with Basic Auth.
+
+#### Basic Auth
+```shell
+curl -X GET -u api_key:api_secret https://api.siteleaf.com/<api_endpoint>
+```
+
 ## API Endpoints
 ### POST /v1/auth.json
 Authenticates user and returns user API keys
@@ -392,6 +398,64 @@ Creates an asset on the given site.
   "updated_at": "2013-11-04T11:34:16-05:00"
 }
 ```
+
+-
+### GET /v1/sites/:id/theme/assets.json
+
+Returns an array of all theme assets for the given site.
+
+#### Response
+```json
+{
+  "id": "5277cc88ef75ac1a76000009",
+  "filename": "default.html",
+  "url": "/default.html",
+  "permalink": "http://mysite.com/default.html",
+  "file": {
+    "url": null,
+    "thumbnail": {
+      "url": null
+    }
+  },
+  "content_type": "text/html",
+  "filesize": 2054,
+  "checksum": "31a6c6dc660d233b24f454a8a6edc25b",
+  "created_at": "2013-11-04T11:34:16-05:00",
+  "updated_at": "2013-11-04T11:34:16-05:00"
+}
+```
+
+-
+### POST /v1/sites/:id/theme/assets.json
+
+Creates a theme asset on the given site.
+
+#### Params
+* **file** *(optional)* — Asset file
+* **url** *(optional)* — Asset remote URL
+
+
+#### Response
+```json
+{
+  "id": "5277cc88ef75ac1a76000009",
+  "filename": "default.html",
+  "url": "/default.html",
+  "permalink": "http://mysite.com/default.html",
+  "file": {
+    "url": null,
+    "thumbnail": {
+      "url": null
+    }
+  },
+  "content_type": "text/html",
+  "filesize": 2054,
+  "checksum": "31a6c6dc660d233b24f454a8a6edc25b",
+  "created_at": "2013-11-04T11:34:16-05:00",
+  "updated_at": "2013-11-04T11:34:16-05:00"
+}
+```
+
 
 -
 ### GET /v1/sites/:id/users.json
