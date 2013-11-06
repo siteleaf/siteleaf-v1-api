@@ -400,6 +400,64 @@ Creates an asset on the given site.
 ```
 
 -
+### GET /v1/sites/:id/theme/assets.json
+
+Returns an array of all theme assets for the given site.
+
+#### Response
+```json
+{
+  "id": "5277cc88ef75ac1a76000009",
+  "filename": "default.html",
+  "url": "/default.html",
+  "permalink": "http://mysite.com/default.html",
+  "file": {
+    "url": null,
+    "thumbnail": {
+      "url": null
+    }
+  },
+  "content_type": "text/html",
+  "filesize": 2054,
+  "checksum": "31a6c6dc660d233b24f454a8a6edc25b",
+  "created_at": "2013-11-04T11:34:16-05:00",
+  "updated_at": "2013-11-04T11:34:16-05:00"
+}
+```
+
+-
+### POST /v1/sites/:id/theme/assets.json
+
+Creates a theme asset on the given site.
+
+#### Params
+* **file** *(optional)* — Asset file
+* **url** *(optional)* — Asset remote URL
+
+
+#### Response
+```json
+{
+  "id": "5277cc88ef75ac1a76000009",
+  "filename": "default.html",
+  "url": "/default.html",
+  "permalink": "http://mysite.com/default.html",
+  "file": {
+    "url": null,
+    "thumbnail": {
+      "url": null
+    }
+  },
+  "content_type": "text/html",
+  "filesize": 2054,
+  "checksum": "31a6c6dc660d233b24f454a8a6edc25b",
+  "created_at": "2013-11-04T11:34:16-05:00",
+  "updated_at": "2013-11-04T11:34:16-05:00"
+}
+```
+
+
+-
 ### GET /v1/sites/:id/users.json
 
 Returns an array of users for the given site.
