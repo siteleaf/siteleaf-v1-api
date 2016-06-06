@@ -1,3 +1,5 @@
+**NOTE:** These documents refer to an outdated version of Siteleaf, and are provided for archival purposes. For help with the latest version of the Siteleaf API see <http://learn.siteleaf.com/api/>.
+
 # Siteleaf - API Documentation
 ## API Authentication
 Siteleaf uses Basic Auth of the user's API key and secret to authenticate each request. To retrieve a user's API key and secret, use the `POST /v1/auth` endpoint, passing the user's email and password authenticated with Basic Auth.
